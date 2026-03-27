@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidad de DevBreak. Cómo protegemos y gestionamos tus datos personales.">
+    <title>DevBreak | Política de Privacidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #05050c;
+            --bg-secondary: #0c0c17;
+            --bg-card: #11111f;
+            --bg-glass: rgba(15, 15, 30, 0.65);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-light: rgba(66, 99, 235, 0.2);
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.4);
+            --accent-hover: #2563eb;
+            --gradient-1: linear-gradient(135deg, #0f172a, #0a0f1e);
+            --card-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+            --btn-primary: linear-gradient(105deg, #3b82f6, #8b5cf6);
+            --footer-bg: #03030a;
+        }
+
+        body.light-mode {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-glass: rgba(255, 255, 255, 0.75);
+            --text-primary: #0f172a;
+            --text-secondary: #334155;
+            --border-light: rgba(59, 130, 246, 0.3);
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+            --card-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.08);
+            --gradient-1: linear-gradient(135deg, #eef2ff, #ffffff);
+            --footer-bg: #eef2ff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background 0.3s ease, color 0.2s ease;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+            backdrop-filter: blur(12px);
+            background: var(--bg-glass);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(115deg, #3b82f6, #a855f7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .theme-toggle {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 40px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: 0.2s;
+            color: var(--text-primary);
+        }
+
+        .legal-content {
+            background: var(--bg-card);
+            border-radius: 32px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--card-shadow);
+        }
+
+        .legal-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(120deg, var(--text-primary), var(--accent));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .legal-content h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.8rem;
+            color: var(--accent);
+        }
+
+        .legal-content p, .legal-content li {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--footer-bg);
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .social-icons a {
+            color: var(--text-secondary);
+            margin-right: 1rem;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+
+        hr {
+            margin: 2rem 0 1rem;
+            border-color: var(--border-light);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .legal-content {
+                padding: 1.5rem;
+            }
+            .legal-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">DevBreak</a>
+        <div class="nav-links">
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#proceso">Proceso</a>
+            <a href="index.html#portfolio">Portafolio</a>
+            <a href="index.html#contacto">Contacto</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Modo claro/oscuro"><i class="fas fa-moon"></i> <span>Light</span></button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="legal-content">
+                <h1>Política de Privacidad</h1>
+                <p><strong>Última actualización:</strong> 27 de marzo de 2026</p>
+                <p>En DevBreak, valoramos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica cómo recopilamos, usamos, almacenamos y compartimos tu información cuando utilizas nuestro sitio web, servicios de desarrollo o te comunicas con nosotros.</p>
+
+                <h2>1. Responsable del Tratamiento</h2>
+                <p>DevBreak, con domicilio en [dirección], es el responsable del tratamiento de tus datos personales. Puedes contactarnos en <a href="mailto:privacy@devbreak.com">privacy@devbreak.com</a> para cualquier consulta sobre privacidad.</p>
+
+                <h2>2. Datos que Recopilamos</h2>
+                <p>Podemos recopilar:</p>
+                <ul>
+                    <li><strong>Datos de contacto:</strong> nombre, correo electrónico, teléfono, empresa.</li>
+                    <li><strong>Información de proyecto:</strong> detalles sobre tu idea, requerimientos técnicos.</li>
+                    <li><strong>Datos de uso:</strong> cómo interactúas con nuestro sitio web (cookies, dirección IP).</li>
+                    <li><strong>Información de pago:</strong> cuando contratas nuestros servicios, procesamos datos de facturación a través de proveedores seguros.</li>
+                </ul>
+
+                <h2>3. Finalidad del Tratamiento</h2>
+                <p>Utilizamos tus datos para:</p>
+                <ul>
+                    <li>Responder a tus consultas y cotizaciones.</li>
+                    <li>Gestionar proyectos de desarrollo y prestar los servicios contratados.</li>
+                    <li>Enviar comunicaciones relacionadas con el servicio, actualizaciones y, con tu consentimiento, información comercial.</li>
+                    <li>Mejorar nuestro sitio web y experiencia de usuario.</li>
+                    <li>Cumplir con obligaciones legales.</li>
+                </ul>
+
+                <h2>4. Base Legal</h2>
+                <p>El tratamiento se basa en la ejecución de un contrato, el consentimiento (para comunicaciones comerciales) y el interés legítimo de mejorar nuestros servicios.</p>
+
+                <h2>5. Compartición de Datos</h2>
+                <p>No vendemos ni alquilamos tus datos personales. Podemos compartir información con:</p>
+                <ul>
+                    <li>Proveedores de servicios (alojamiento web, herramientas de análisis, pasarelas de pago) bajo acuerdos de confidencialidad.</li>
+                    <li>Autoridades legales cuando sea requerido por ley.</li>
+                </ul>
+
+                <h2>6. Transferencias Internacionales</h2>
+                <p>Algunos proveedores pueden estar ubicados fuera de tu país. Nos aseguramos de que dichas transferencias cumplan con las leyes de protección de datos aplicables (por ejemplo, cláusulas contractuales tipo).</p>
+
+                <h2>7. Seguridad</h2>
+                <p>Implementamos medidas técnicas y organizativas para proteger tus datos contra accesos no autorizados, pérdida o alteración. Sin embargo, ningún sistema es 100% seguro.</p>
+
+                <h2>8. Retención de Datos</h2>
+                <p>Conservamos tus datos durante el tiempo necesario para cumplir con las finalidades descritas y mientras existan obligaciones legales. Los datos de proyectos pueden conservarse hasta 5 años después de la finalización para fines de soporte.</p>
+
+                <h2>9. Tus Derechos</h2>
+                <p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad enviando una solicitud a <a href="mailto:privacy@devbreak.com">privacy@devbreak.com</a>. También tienes derecho a presentar una reclamación ante la autoridad de control competente.</p>
+
+                <h2>10. Cookies</h2>
+                <p>Utilizamos cookies propias y de terceros para analizar el tráfico y mejorar la funcionalidad. Puedes configurar tu navegador para rechazarlas, aunque esto puede afectar la experiencia.</p>
+
+                <h2>11. Cambios en esta Política</h2>
+                <p>Actualizaremos esta política periódicamente. Te notificaremos cualquier cambio significativo a través de nuestro sitio web.</p>
+
+                <p>Si tienes preguntas sobre cómo tratamos tus datos, contáctanos en <a href="mailto:privacy@devbreak.com">privacy@devbreak.com</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div><a href="index.html" class="logo" style="font-size: 1.8rem;">DevBreak</a><p style="margin-top: 0.5rem; color: var(--text-secondary);">Software que escala negocios</p></div>
+                <div><h4>Enlaces</h4><p><a href="index.html#servicios" style="color: var(--text-secondary); text-decoration: none;">Servicios</a></p><p><a href="index.html#portfolio" style="color: var(--text-secondary); text-decoration: none;">Portafolio</a></p><p><a href="index.html#contacto" style="color: var(--text-secondary); text-decoration: none;">Contacto</a></p></div>
+                <div><h4>Legal</h4><p><a href="terms.html" style="color: var(--text-secondary); text-decoration: none;">Términos y Condiciones</a></p><p><a href="privacy.html" style="color: var(--text-secondary); text-decoration: none;">Política de Privacidad</a></p></div>
+                <div class="social-icons"><i class="fab fa-linkedin"></i> <i class="fab fa-twitter"></i> <i class="fab fa-github"></i> <i class="fab fa-instagram"></i></div>
+            </div>
+            <hr>
+            <p style="text-align: center; color: var(--text-secondary);">© 2025 DevBreak — Innovación tecnológica sin límites.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i> Dark';
+        } else {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i> Light';
+        }
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            themeToggle.innerHTML = isLight ? '<i class="fas fa-sun"></i> Dark' : '<i class="fas fa-moon"></i> Light';
+        });
+    </script>
+</body>
+</html>
